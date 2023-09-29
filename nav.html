@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <span><i class="fa-solid fa-b"></i></span>
+            </div>
+            <nav>
+                <div class="navsearchul">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">My Intro</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <!--this search bare will appare in less then 992px screen-->
+                    <div class="search mobileSearch">
+                        <input type="text" placeholder="Enter Keyword..">
+                        <button>search</button>
+                    </div>
+                </div>
+            </nav>
+            <div class="right">
+                <!--this search bare will appare in more then 992px screen-->
+                <div class="search desktopSearch">
+                    <input type="text" placeholder="Enter Keyword..">
+                    <button>search</button>
+                </div>
+                <div class="moonIcon">
+                    <i class="fa-solid fa-moon"></i>
+                    <span class="navIcon"><i class="fa-solid fa-bars"></i></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        $(".navIcon").on("click",function(){
+                $(".navsearchul").slideToggle()
+            })
+
+    </script>
+
+    
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/9c1d2810fa.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</body>
+</html>
